@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setup Stage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1>Setup Stage</h1>
+        <div id="instructionBox" class="messageBox">
+          <p>Instructions:</p>
+          <p>
+            Click on a cell and type a number between 5 and 8 to place a
+            treasure (e.g., 5, 6, 7, 8).
+          </p>
+          <p>Click on a cell and type "o" to place an obstacle.</p>
+          <p>Click on a cell and type "h" to place the treasure hunter.</p>
+        </div>
+        <div id="errorBox" class="messageBox" style="display: none"></div>
+        <!-- Hide initially -->
+        <button id="endSetupButton">End Setup Stage</button>
+      </div>
+      <div class="grid-container">
+        <div id="grid"></div>
+      </div>
+    </div>
+
+    <!-- Custom Modals -->
+    <div id="modalContainer" class="modal-container">
+      <div class="modal-content">
+        <p id="modalMessage"></p>
+        <input type="text" id="modalInput" />
+        <button id="modalSubmit">Submit</button>
+        <button id="modalCancel">Cancel</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
